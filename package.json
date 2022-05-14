@@ -4,7 +4,7 @@
   "description": "COMO RODAR O PROJETO BAIXADO\r Instalar todas as dependencias indicada pelo package.json\r ### npm install",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "next dev"
   },
   "keywords": [],
   "author": "Augusto Caetano",
@@ -24,6 +24,11 @@
   },
   "devDependencies": {
     "nodemon": "^2.0.16"
+  },
+  "browser": {
+    "fs": false,
+    "path": false,
+    "os": false
   },
   "repository": {
     "type": "git",
