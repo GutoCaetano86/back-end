@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "dev": "next dev",
-    "build": "next build"
+    "build": "next build",
+    "next": "next lint"
   },
   "keywords": [],
   "author": "Augusto Caetano",
@@ -15,6 +16,7 @@
     "dotenv": "^16.0.1",
     "express": "^4.18.1",
     "fs": "^0.0.1-security",
+    "lint": "^1.1.2",
     "next": "^12.1.6",
     "parseurl": "^1.3.3",
     "path": "^0.12.7",
