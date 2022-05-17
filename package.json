@@ -8,6 +8,11 @@
     "build": "next build",
     "next": "next lint"
   },
+  "browser": {
+    "fs": false,
+    "path": false,
+    "os": false
+  },
   "keywords": [],
   "author": "Augusto Caetano",
   "license": "ISC",
