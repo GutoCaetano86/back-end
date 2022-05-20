@@ -1,10 +1,16 @@
+import { Component } from 'react';
 const express = require('express');
 const cors = require('cors');
 const app = express();
 
 const Home = require('../models/Home');
 const MSGContact = require('../models/MSGContact');
-const { func } = require('prop-types');
+
+
+export default class App extends Component {
+static displayName = App.name 
+
+render () {
 
 app.use(express.json())
 
@@ -93,3 +99,4 @@ app.listen(8080, () => {
     console.log("Servidor iniciado na porta 8080: http://localhost:8080");
 })
 
+}}
