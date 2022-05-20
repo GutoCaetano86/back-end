@@ -5,7 +5,8 @@ Instalar todas as dependencias indicada pelo package.json
 Rodar o projeto usando o nodemon 
 ### nodemon app.js
 
-
+Criar o projeto com Next.js
+### npm install next react react-dom
 
 SEQUENCIA PARA CRIAR O PROJETO
 Criar o arquivo package.
@@ -23,3 +24,9 @@ Instalar a dependência como desenvolvedor para reiniciar o servidor sempre que 
 Permitir acesso a API
 ### npm install --save cors
 
+Acesso banco de dados
+### npm install --save sequelize
+### npm install --save tedious
+
+arquivo .env
+### npm install dotenv

@@ -4,8 +4,9 @@ const app = express();
 
 const Home = require('../models/Home');
 const MSGContact = require('../models/MSGContact');
+const { func } = require('prop-types');
 
-app.use(express.json());
+app.use(express.json())
 
 app.use((req, res, next) => {
     res.header("Access-Control-Allow-Origin", "*");
@@ -13,7 +14,7 @@ app.use((req, res, next) => {
     res.header("Access-Control-Allow-Headers", "X-PINGOTHER, Content-Type, Authorization");
     app.use(cors());
     next();
-});
+})
 
 app.get('/', async(req, res) => {
     
@@ -38,7 +39,9 @@ app.get('/', async(req, res) => {
                 mensagem: "ERRO: Nenhuma valor encontrado para a pg HOME."
             });
         });
-});
+})
+
+
 
 app.post('/add-home', async(req, res) => {
 
@@ -64,7 +67,8 @@ app.post('/add-home', async(req, res) => {
             mensagem: "Erro: Dados não cadastrados."
         });
     });
-});
+})
+
 
 app.post("/add-msg-contact", async (req, res) => {
     await MSGContact.create(req.body)
@@ -81,9 +85,10 @@ app.post("/add-msg-contact", async (req, res) => {
             mensagem: "ERRO: Mensagem de contato não enviada!"
         })
     })
-});
+})
+
 
 
 app.listen(8080, () => {
     console.log("Servidor iniciado na porta 8080: http://localhost:8080");
-});
+})
